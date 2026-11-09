@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- sitemap.xml - lists every page so search engines can find them.
-     Replace https://www.imperialscents.co.za/ with real website address once it is online. -->
+     Replace https://imperial-scents-bay.vercel.app/ with real website address once it is online. -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://www.imperialscents.co.za/home.html</loc>
+        <loc>https://imperial-scents-bay.vercel.app/index.html</loc>
         <lastmod>2026-11-08</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://www.imperialscents.co.za/products.html</loc>
+        <loc>https://imperial-scents-bay.vercel.app/products.html</loc>
         <lastmod>2026-11-08</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://www.imperialscents.co.za/about.html</loc>
+        <loc>https://imperial-scents-bay.vercel.app//about.html</loc>
         <lastmod>2026-11-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://www.imperialscents.co.za/enquiry.html</loc>
+        <loc>https://imperial-scents-bay.vercel.app/enquiry.html</loc>
         <lastmod>2026-11-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://www.imperialscents.co.za/contact.html</loc>
+        <loc>https://imperial-scents-bay.vercel.app/contact.html</loc>
         <lastmod>2026-11-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
