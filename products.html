@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfumes for Men, Women & Unisex | Imperial Scents</title>
+    <meta name="description" content="Browse our full range of affordable perfumes from R100 to R550. Search, filter and sort men's, women's and unisex fragrances, including oud and vanilla scents.">
+    <link href="CSS/styles.css" rel="stylesheet">
+    <script src="js/products-data.js" defer></script>
+    <script src="js/products.js" defer></script>
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+    <div class="brand">
+        <h1>Imperial Scents</h1>
+        <p class="tagline">POWER. PRESENCE. LEGACY.</p>
+    </div>
+         <!--The section below alows for easy navigation between differnet pages-->
+        <nav class="site-nav">
+            <a href="home.html" >Home</a>
+            <a href="about.html" >About Us</a>
+            <a href="products.html" aria-current="page">Products</a>
+            <a href="enquiry.html" >Enquiries</a>
+            <a href="contact.html" >Contact</a>
+        </nav>
+    </header>
+
+     <main>
+ 
+        <h2>Full Fragrance Catalog</h2>
+        <!--Each Fragrance will have its own image. The cards below are built by js/products.js using the data in js/products-data.js-->
+ 
+        <div class="product-controls">
+            <div class="control">
+                <label for="search-box">Search</label>
+                <input type="search" id="search-box" placeholder="e.g. oud, vanilla, fresh">
+            </div>
+ 
+            <div class="control">
+                <label for="category-filter">Category</label>
+                <select id="category-filter">
+                    <option value="all">All</option>
+                    <option value="Men's">Men's</option>
+                    <option value="Women's">Women's</option>
+                    <option value="Unisex">Unisex</option>
+                </select>
+            </div>
+ 
+            <div class="control">
+                <label for="price-filter">Price</label>
+                <select id="price-filter">
+                    <option value="all">Any price</option>
+                    <option value="0-200">Up to R200</option>
+                    <option value="201-300">R201 - R300</option>
+                    <option value="301-999">Over R300</option>
+                </select>
+            </div>
+ 
+            <div class="control">
+                <label for="sort-by">Sort by</label>
+                <select id="sort-by">
+                    <option value="default">Featured</option>
+                    <option value="name">Name (A-Z)</option>
+                    <option value="price-low">Price (low to high)</option>
+                    <option value="price-high">Price (high to low)</option>
+                </select>
+            </div>
+ 
+            <button type="button" id="clear-filters" class="btn btn-outline">Clear</button>
+        </div>
+ 
+        <p id="result-count" role="status" aria-live="polite"></p>
+ 
+        <section data-category="Men's">
+            <h3 class="category-heading">Men's</h3>
+            <div class="grid"></div>
+        </section>
+ 
+        <section data-category="Women's">
+            <h3 class="category-heading">Women's</h3>
+            <div class="grid"></div>
+        </section>
+ 
+        <section data-category="Unisex">
+            <h3 class="category-heading">Unisex</h3>
+            <div class="grid"></div>
+        </section>
+ 
+        <p id="no-results" hidden>No fragrances match your search. Try a different word or press Clear.</p>
+ 
+        <noscript><p>Please turn on JavaScript to see the fragrance catalogue.</p></noscript>
+ 
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Imperial Scents. All Rights Reserved. Crafted with care by Imperial Scents.</p>
+    </footer>
+     <!-- Lightbox: shows a product image larger when it is clicked -->
+    <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Product image viewer" hidden>
+        <button type="button" id="lightbox-close" class="lightbox-close" aria-label="Close">&times;</button>
+        <button type="button" id="lightbox-prev" class="lightbox-nav lightbox-prev" aria-label="Previous fragrance">&#10094;</button>
+        <figure>
+            <img id="lightbox-img" src="" alt="">
+            <figcaption id="lightbox-caption"></figcaption>
+        </figure>
+        <button type="button" id="lightbox-next" class="lightbox-nav lightbox-next" aria-label="Next fragrance">&#10095;</button>
+    </div>
+
+</body>
+</html>
